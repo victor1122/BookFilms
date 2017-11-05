@@ -30,6 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        loginProgress = new ProgressDialog(this, R.style.Theme_MyDialog);
         addControls();
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
