@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darkwinter.bookfilms.BookingTicketActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="15dp"
+        android:text="Seat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinTime" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="15dp"
+        android:text="Cinema"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinDate" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="368dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Booking Ticket"
+        android:textAlignment="gravity"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinTime"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:popupBackground="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/spinCinema" />
+
+    <Spinner
+        android:id="@+id/spinSeat"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:popupBackground="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/spinTime" />
+
+    <Spinner
+        android:id="@+id/spinCinema"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:popupBackground="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/spinDate" />
+
+    <Button
+        android:id="@+id/btnBookAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Book Ticket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinSeat" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="15dp"
+        android:text="Time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinCinema" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/cinema" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="Dates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/spinDate"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:popupBackground="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>
